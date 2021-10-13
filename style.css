@@ -122,17 +122,23 @@ small {
     }
     .container {
         flex-direction: row;
+        margin: 2px solid red;
     }
     .content1 {
 
-        width: 55%;
+        width: 60%;
         display: block;
-        margin: 50px 250px;
+        margin: 50px 50px;
+        padding: 0 150px;
+        min-width: 750px;
+        
     }
     .content2 {
         background-image: url("/images/hero-desktop.jpg");
-        width: 45%;
+        width: 40%;
         height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     h1 {
         font-size: 60px;
