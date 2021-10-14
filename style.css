@@ -16,7 +16,7 @@
 }
 
 /* for mobile phones */
-.container {
+main {
     display: flex;
     flex-direction: column;
     background-image: url("/images/bg-pattern-desktop.svg");
@@ -53,7 +53,6 @@ p {
     text-align: center;
 }
 form {
-    display: block;
     margin: 0 30px;
     position: relative;
 }
@@ -76,7 +75,7 @@ button {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 12px 25px;
+    padding: 12px 45px;
     background: var(--Gradient-2);
     border-radius: 50px;
     border: 0;
@@ -85,7 +84,7 @@ button {
 form > img {
     position: absolute;
     top: 10px;
-    right: 70px;
+    right: 110px;
     visibility: hidden;
 }
 small {
@@ -114,31 +113,27 @@ small {
 .success input {
     border: 1px solid green;
 }
-
+.content2 {
+    display: none;
+}
 /* For desktop */
 @media only screen and (min-width: 1024px) {
     .content1 .img-mobile {
         display: none;
     }
-    .container {
+    main {
         flex-direction: row;
-        margin: 2px solid red;
     }
     .content1 {
-
-        width: 60%;
-        display: block;
-        margin: 50px 50px;
+        flex-grow: 1;
+        margin: 50px 0;
         padding: 0 150px;
-        min-width: 750px;
-        
     }
     .content2 {
-        background-image: url("/images/hero-desktop.jpg");
-        width: 40%;
+        display: initial;
+    }
+    .content2 img {
         height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     h1 {
         font-size: 60px;
@@ -149,6 +144,10 @@ small {
     p {
         text-align: start;
         font-size: inherit;
+        width: 500px;
+    }
+    form {
+        width: 500px;
     }
     button:hover {
         background: hsl(0, 100%, 90%);
